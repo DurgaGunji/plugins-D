@@ -1,0 +1,307 @@
+/* Main Calendar Wrapper */
+.rbc-calendar {
+    border: 1px solid #ddd;
+    /* background-color: #f8f9fa; */
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Toolbar Styles */
+  .rbc-toolbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    /* background-color: #6c757d; */
+    /* background-color:blue; */
+    /* background-color: #e9ecef; */
+    color: white;
+    font-weight: bold;
+  }
+  /* Button Container Styles */
+.rbc-toolbar .rbc-btn-group {
+    /* background-color: blue; Set the background color to blue */
+    padding: 5px;          /* Optional: Adjust padding for spacing */
+    border-radius: 4px;    /* Optional: Add rounded corners */
+    color:aliceblue;
+  }
+  
+  /* Optional: Style individual buttons within the container */
+  .rbc-toolbar .rbc-btn-group button {
+    background-color: blue;
+    color:aliceblue;    /* Text color for buttons */
+    border: none;          /* Remove border for cleaner look */
+    margin: 0 2px;         /* Add spacing between buttons */
+  }
+  
+  .rbc-toolbar .rbc-btn-group button:hover {
+    background-color: blue; /* Darker blue for hover effect */
+  }
+  
+  
+  /* Time View Wrapper */
+  .rbc-time-view {
+    /* background-color: #ffffff; */
+   
+  }
+  
+  /* Time Header (Days of the Week) */
+  .rbc-time-header {
+    border-bottom: 1px solid #ddd;
+    /* background-color: #e9ecef; */
+   padding:3px 3px;
+   height:60px;
+    
+  }
+  
+  /* Time Content Area */
+  .rbc-time-content {
+    overflow-y: auto;
+  }
+  
+  /* Time Gutter (Hours Column) */
+  .rbc-time-gutter {
+    width: 50px;
+    /* background-color: #f1f3f5; */
+   
+    text-align: right;
+    padding-right: 5px;
+  }
+  
+  /* Time Columns (Day Slots) */
+  .rbc-time-column {
+    border-left: 2px solid #ddd;
+    width:100px;
+   
+  }
+  
+  /* Highlight Today */
+  .rbc-day-column.rbc-now {
+    background-color: #fff3cd;
+   
+  }
+  .rbc button {
+    background-color:blue !important;
+  }
+  
+  /* Current Time Indicator */
+  .rbc-current-time-indicator {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: red;
+    z-index: 10;
+  }
+  .custom-event {
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  /* Event Styles */
+   .rbc-event {
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 12px;
+    height:auto;
+  } 
+   
+.rbc-timeslot-group{
+  display:block !important;
+}
+.rbc-events-container1{
+  display:block !important;
+}
+  /* Event Variants */
+  .rbc-event.event-1 {
+    background-color:lightpink !important;
+        width:170px !important;
+    margin-left: 20px;
+    /* border-left: 4px solid green; */
+  }
+  .rbc-event.event-1::before {
+    content: '';
+    position: absolute;
+    left: 0; /* Position the line at the left of the element */
+    top: 20px; /* Start the line at the top */
+    bottom:10px;
+    height: 50px; /* Full height of the element */
+    width: 5px; /* Thickness of the line */
+    background-color: red; /* Line color */
+    border-radius: 5px;
+  }
+  
+  .rbc-event.event-2 {
+    background-color:paleturquoise !important;
+    width:180px !important;
+  }
+  .rbc-event.event-2::before {
+    content: '';
+    position: absolute;
+    left: 0; /* Position the line at the left of the element */
+    top: 20px; /* Start the line at the top */
+    bottom:10px;
+    height: 50px; /* Full height of the element */
+    width: 5px; /* Thickness of the line */
+    background-color:limegreen; /* Line color */
+    border-radius: 5px;
+  }
+  .rbc-event2 {
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 12px;
+    height:auto;
+  } 
+   
+.rbc-timeslot-group2{
+  display:block !important;
+}
+  .rbc-events-container2{
+    display:block !important;
+  }
+  .rbc-event.event-3 {
+    /* background-color: #8e44ad; */
+    background-color:paleturquoise !important;
+    width:200px !important ;
+    
+    margin-left: 20px;
+  }
+  .rbc-event.event-3::before {
+    content: '';
+    position: absolute;
+    left: 0; /* Position the line at the left of the element */
+    top: 20px; /* Start the line at the top */
+    bottom:10px;
+    height: 50px; /* Full height of the element */
+    width: 5px; /* Thickness of the line */
+    background-color: green; /* Line color */
+    border-radius: 5px;
+  }
+  .rbc-event.event-4{
+    background-color:paleturquoise  !important;
+    /* background-color: #8e44ad; */
+    width:200px !important;
+  }
+  .rbc-event.event-4::before {
+    content: '';
+    position: absolute;
+    left: 0; /* Position the line at the left of the element */
+    top: 20px; /* Start the line at the top */
+    bottom:10px;
+    height: 50px; /* Full height of the element */
+    width: 5px; /* Thickness of the line */
+    background-color: green; /* Line color */
+    border-radius: 5px;
+  }
+  .rbc-event.event-5 {
+    /* background-color: #8e44ad; */
+    background-color:paleturquoise !important;
+    width:200px !important;
+    /* margin-left: 20px; */
+    margin-right: 25px;
+  }
+  .rbc-event.event-5::before {
+    content: '';
+    position: absolute;
+    left: 0; /* Position the line at the left of the element */
+    top: 20px; /* Start the line at the top */
+    bottom:10px;
+    height: 50px; /* Full height of the element */
+    width: 5px; /* Thickness of the line */
+    background-color: blue; /* Line color */
+    border-radius: 5px;
+  }
+  .rbc-event.event-6 {
+    /* background-color: #8e44ad; */
+    width:200px !important;
+    margin-left: 20px;
+  }
+  .rbc-event.event-6::before {
+    content: '';
+    position: absolute;
+    left: 0; /* Position the line at the left of the element */
+    top: 20px; /* Start the line at the top */
+    bottom:10px;
+    height: 50px; /* Full height of the element */
+    width: 5px; /* Thickness of the line */
+    background-color: blue; /* Line color */
+    border-radius: 5px;
+  }
+  .rbc-event.event-7 {
+    /* background-color: #8e44ad; */
+    width:200px !important;
+  }
+  .rbc-event.event-7::before {
+    content: '';
+    position: absolute;
+    left: 0; /* Position the line at the left of the element */
+    top: 20px; /* Start the line at the top */
+    bottom:10px;
+    height: 50px; /* Full height of the element */
+    width: 5px; /* Thickness of the line */
+    background-color: blue; /* Line color */
+    border-radius: 5px;
+  }
+  .rbc-event.event-8 {
+    /* background-color: #8e44ad; */
+    width:200px !important;
+  }
+  .rbc-event.event-8::before {
+    content: '';
+    position: absolute;
+    left: 0; /* Position the line at the left of the element */
+    top: 20px; /* Start the line at the top */
+    bottom:10px;
+    height: 50px; /* Full height of the element */
+    width: 5px; /* Thickness of the line */
+    background-color: blue; /* Line color */
+    border-radius: 5px;
+  }
+ 
+  
+  
+  /* Custom Event Rendering */
+  /* .custom-event {
+    display: flex;
+    align-items: center;
+  } */
+   /* Example: Remove fixed width or set max-width */
+   
+
+  .custom-event {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* .more-button {
+    background-color: #007bff; Blue background 
+    color: white;
+    border: none;
+    border-radius: 50%; /* Circular button */
+    /* width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    margin-top: 10px;
+    cursor: pointer;
+  } */
+  
+  /* .more-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  /* } */
+   
+  /* .custom-event .more-button { */
+    /* align-self: flex-end; Align the button to the right */
+  /* } * */
+ 
+  
+  
+  
